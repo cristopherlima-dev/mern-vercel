@@ -1,5 +1,5 @@
 {
-  "buldCommand": "cd client && npm install && npm run build",
+  "buildCommand": "cd client && npm install && npm run build",
   "outputDirectory": "client/dist",
   "framework": "vite",
   "rewrites": [

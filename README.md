@@ -69,3 +69,10 @@ npm run dev
 cd client
 npm run build
 ```
+
+## Deploy na Vercel
+
+- Add New Project
+- Selecionar o projeto `mern-vercel`
+- Import
+- Deploy

@@ -32,7 +32,17 @@ npm i
 ## Criar o arquivo `vercel.json` no diretório root
 
 ```json
-
+{
+  "buldCommand": "cd client && npm install && npm run build",
+  "outputDirectory": "client/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    }
+  ]
+}
 ```
 
 ## Teste - api
@@ -52,3 +62,10 @@ npm run dev
 ```
 
 - No browser: http://localhost:3000
+
+## Criação da build
+
+```bash
+cd client
+npm run build
+```
